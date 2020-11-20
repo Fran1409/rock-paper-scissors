@@ -36,18 +36,23 @@
         console.log(yourChoice + computerChoice);
 
         if ( yourChoice === computerChoice) {
+            document.getElementById("winner").innerHTML = "It's a tie!";
             console.log("tie");
         }
         else if ( yourChoice === "rock" && computerChoice !== "paper") {
+            document.getElementById("winner").innerHTML = "You win! You had "+yourChoice+" and the other player had "+computerChoice+".";
             console.log("you win with rock");
         }
         else if ( yourChoice === "paper" && computerChoice !== "scissors") {
+            document.getElementById("winner").innerHTML = "You win! You had "+yourChoice+" and the other player had "+computerChoice+".";
             console.log("you win with paper");
         }
         else if ( yourChoice === "scissors" && computerChoice !== "rock") {
+            document.getElementById("winner").innerHTML = "You win! You had "+yourChoice+" and the other player had "+computerChoice+".";
             console.log("you win with scissors");
         }
         else {
+            document.getElementById("winner").innerHTML = "You lose! You had "+yourChoice+" and the other player had "+computerChoice+".";
             console.log("you lose");
         };
     };
