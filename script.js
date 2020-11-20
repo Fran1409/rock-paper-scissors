@@ -6,7 +6,6 @@
     //get players choice
    function choice_click(clicked) { 
         yourChoice = clicked; 
-        console.log(yourChoice);
     };   
 
     //get computers choice
@@ -37,27 +36,31 @@
 
         if ( yourChoice === computerChoice) {
             document.getElementById("winner").innerHTML = "It's a tie!";
-            console.log("tie");
+            document.getElementById("play").innerHTML = "PLAY AGAIN";
         }
         else if ( yourChoice === "rock" && computerChoice !== "paper") {
             document.getElementById("winner").innerHTML = "You win! You had "+yourChoice+" and the other player had "+computerChoice+".";
-            console.log("you win with rock");
+            document.getElementById("play").innerHTML = "PLAY AGAIN";
         }
         else if ( yourChoice === "paper" && computerChoice !== "scissors") {
             document.getElementById("winner").innerHTML = "You win! You had "+yourChoice+" and the other player had "+computerChoice+".";
-            console.log("you win with paper");
+            document.getElementById("play").innerHTML = "PLAY AGAIN";
         }
         else if ( yourChoice === "scissors" && computerChoice !== "rock") {
             document.getElementById("winner").innerHTML = "You win! You had "+yourChoice+" and the other player had "+computerChoice+".";
-            console.log("you win with scissors");
+            document.getElementById("play").innerHTML = "PLAY AGAIN";
         }
         else if ( yourChoice === "fire" && computerChoice !== "fire") {
             document.getElementById("winner").innerHTML = "You win! You had "+yourChoice+" and fire beats everything!";
-            console.log("you win with scissors");
+            document.getElementById("play").innerHTML = "PLAY AGAIN";
+        }
+        else if (yourChoice == "") {
+            document.getElementById("winner").innerHTML = "You need to select a choice before you can play.";
+            document.getElementById("play").innerHTML = "PLAY AGAIN";
         }
         else {
             document.getElementById("winner").innerHTML = "You lose! You had "+yourChoice+" and the other player had "+computerChoice+".";
-            console.log("you lose");
+            document.getElementById("play").innerHTML = "PLAY AGAIN";
         };
     };
 
