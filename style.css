@@ -1,0 +1,33 @@
+body {
+    background-color: #fcd2e2;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+  }
+
+header {
+    background-color: #7d5a5a;
+    color:#faf2f2;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+div {
+    margin-top: 40px;
+}
+ 
+
+button {
+    background-color:#c99090;
+    color: #faf2f2;
+    font-size: 15px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  button:hover {
+    background-color:#c99090dc;
+  }
