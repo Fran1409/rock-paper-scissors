@@ -51,6 +51,10 @@
             document.getElementById("winner").innerHTML = "You win! You had "+yourChoice+" and the other player had "+computerChoice+".";
             console.log("you win with scissors");
         }
+        else if ( yourChoice === "fire" && computerChoice !== "fire") {
+            document.getElementById("winner").innerHTML = "You win! You had "+yourChoice+" and fire beats everything!";
+            console.log("you win with scissors");
+        }
         else {
             document.getElementById("winner").innerHTML = "You lose! You had "+yourChoice+" and the other player had "+computerChoice+".";
             console.log("you lose");
